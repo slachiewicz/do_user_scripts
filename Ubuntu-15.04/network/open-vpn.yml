@@ -27,10 +27,10 @@ runcmd:
   - openssl dhparam -out /etc/openvpn/dh2048.pem 2048
   - cd /etc/openvpn/easy-rsa && . ./vars
   # Optionally set indentity information for certificates:
-  # - export KEY_COUNTRY="<%COUNTRY%>" # 2-char country code
+  - export KEY_COUNTRY="pl"
   # - export KEY_PROVINCE="<%PROVINCE%>" # 2-char state/province code
   # - export KEY_CITY="<%CITY%>" # City name
-  # - export KEY_ORG="<%ORG%>" # Org/company name
+  - export KEY_ORG="lachiewicz.com"
   # - export KEY_EMAIL="<%EMAIL%>" # Email address
   # - export KEY_OU="<%ORG_UNIT%>" # Orgizational unit / department
   - cd /etc/openvpn/easy-rsa && ./clean-all
